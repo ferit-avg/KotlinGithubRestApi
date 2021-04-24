@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/favorite"
+    app:startDestination="@id/favoriteFragment">
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.ferit.kotlingithubrestapi.ui.menu.favorites.FavoriteFragment"
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_repoDetailsFragment"
+            app:destination="@id/repoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailsFragment"
+        android:name="com.ferit.kotlingithubrestapi.ui.menu.home.RepoDetailsFragment"
+        android:label="RepoDetailsFragment" >
+        <argument
+            android:name="repo"
+            app:argType="com.ferit.kotlingithubrestapi.data.model.repo.Repo" />
+    </fragment>
+</navigation>

@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">KotlinGithubRestApi</string>
+    <string name="app_name">RestApi</string>
+
+    <!-- Common -->
+    <string name="OK">Tamam</string>
+    <string name="CANCEL">Vazgeç</string>
+    <string name="TRY_AGAIN">Tekrar Dene</string>
+    <string name="CHANGE">Değiştir</string>
+    <string name="YES">Evet</string>
+    <string name="CONTINUE">Devam Et</string>
+    <string name="ERROR">Hata</string>
+
+
+
+    <string name="TFSearch">Kullanıcı ara</string>
+
+    <string name="BNHome">Home</string>
+    <string name="BNFavorites">Favoriler</string>
+    <string name="BNMore">Diğer</string>
+
+    <!-- Constants -->
+    <string name="alert_type_done_icon">DoneIcon.json</string>
+    <string name="alert_type_warning_icon">WarningIcon.json</string>
+    <string name="alert_type_info_icon">InfoIcon.json</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+
+    <string name="TextStarCount">Star Count: %1$s</string>
+    <string name="TextOpenIssueCount">Open Issue Count: %1$s</string>
+
 </resources>

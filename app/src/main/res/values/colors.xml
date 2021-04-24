@@ -7,4 +7,34 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#DF4FA4</color>
+    <color name="colorPrimaryDark">#DF4FA4</color>
+    <color name="colorAccent">#FAAE17</color>
+    <color name="colorSecondary">#108239</color>
+    <color name="colorSubCategory">#FAAE17</color>
+
+    <color name="orangeLight">#FAAE17</color>
+
+    <color name="colorPrimaryLight">#00914A</color>
+    <color name="colorCartMinFeeBg">#e7f4ee</color>
+
+    <color name="colorLineBg">#E5E5E5</color>
+    <color name="colorPrimaryBg">#f5f5f5</color>
+    <color name="colorTextPrimary">@color/colorPrimary</color>
+    <color name="colorTextGray">#6e6e6e</color>
+    <color name="colorTextBlack">#495057</color>
+    <color name="colorTextRed">#ff0000</color>
+    <color name="colorStatusTextRed">#c43a3e</color>
+    <color name="colorDeliverySlotBg">#e7f4ee</color>
+
+    <color name="colorProgressBar">#efefef</color>
+    <color name="colorEditTextBorder">#e9e9e9</color>
+
+    <color name="orange">#E65900</color>
+
+    <color name="colorSplash">#40B4FF</color>
+    <color name="colorDangerAlert">#ff0000</color>
+    <color name="colorButtonPink">#DF4FA4</color>
+    <color name="colorButtonPrimary">@color/colorPrimary</color>
 </resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <ToggleButton
+            android:id="@+id/tg_favorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/favorite_toggle"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/muli_bold"
+            tools:text="feritakcan"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_avatar"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_owner_name" />
+
+        <TextView
+            android:id="@+id/tv_repo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/muli_bold"
+            tools:text="google/kotlin-mvvm"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"/>
+
+        <LinearLayout
+            android:id="@+id/ll_count_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_repo_name">
+
+            <TextView
+                android:id="@+id/tv_repo_star_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/muli_bold"
+                tools:text="Star Count: 1453"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextGray"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_repo_open_issue_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/muli_bold"
+                tools:text="Open Issue: 5677"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorTextGray"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_repo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/muli_light"
+            tools:text="Default configuration for github"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_count_container"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
