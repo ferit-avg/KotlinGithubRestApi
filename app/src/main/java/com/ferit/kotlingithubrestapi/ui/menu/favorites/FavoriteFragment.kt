@@ -11,7 +11,9 @@ import com.ferit.kotlingithubrestapi.data.local.FavoriteRepo
 import com.ferit.kotlingithubrestapi.data.model.repo.Owner
 import com.ferit.kotlingithubrestapi.data.model.repo.Repo
 import com.ferit.kotlingithubrestapi.databinding.FragmentFavoriteBinding
+import com.ferit.kotlingithubrestapi.ext.gone
 import com.ferit.kotlingithubrestapi.ext.navigate
+import com.ferit.kotlingithubrestapi.ext.visible
 import com.ferit.kotlingithubrestapi.ui.base.BaseFragment
 import com.ferit.kotlingithubrestapi.ui.menu.favorites.adapter.FavoriteAdapter
 import com.ferit.kotlingithubrestapi.ui.menu.favorites.viewmodel.FavoriteReposViewModel
@@ -80,12 +82,24 @@ class FavoriteFragment: BaseFragment(R.layout.fragment_favorite), FavoriteAdapte
             adapter = favoriteAdapter
         }
 
-        favoriteReposViewModel.getFavoriteRepos.observe(viewLifecycleOwner, { list ->
-            list?.let {
+        favoriteReposViewModel.getFavoriteRepos.observe(viewLifecycleOwner, {
+            if (it.size > 0) {
+                binding.apply {
+                    rvFavorite.visible()
+                    tvEmpty.gone()
+                }
                 favoriteAdapter.submitList(it)
+            } else {
+                emptyFavoriteList()
             }
-
         })
+    }
+
+    private fun emptyFavoriteList() {
+        binding.apply {
+            rvFavorite.gone()
+            tvEmpty.visible()
+        }
     }
 
     private fun setupUI() {

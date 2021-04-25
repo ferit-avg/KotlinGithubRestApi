@@ -27,5 +27,7 @@
 
     <string name="TextStarCount">Star Count: %1$s</string>
     <string name="TextOpenIssueCount">Open Issue Count: %1$s</string>
+    <string name="tv_favorite_empty_list">Empty List</string>
+    <string name="not_loading">Yüklenemiyor</string>
 
 </resources>
